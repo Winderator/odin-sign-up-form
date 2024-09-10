@@ -3,6 +3,10 @@
     src: url("Norse-Bold.otf")
 }
 
+:root {
+    --right-section-background-darker: hsl(0,0%,95%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -64,5 +68,16 @@ a {
 }
 
 #right-section {
-    width: 60vw;
+    height: 100vh;
+    width: calc( 100vw - calc(100vh * calc(1862/2792)));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--right-section-background-darker);
+}
+
+form {
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,20%);
 }
