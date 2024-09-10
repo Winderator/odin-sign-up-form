@@ -14,16 +14,19 @@ body {
 }
 
 #left-section {
-    width: 40vw;
+    width: 30vw;
+    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #logo-container {
     display:flex;
     justify-content: center;
     margin-top: 200px;
+    margin-bottom: auto;
     width: 100%;
     font-family: "Norse Bold";
     color: white;
@@ -32,6 +35,10 @@ body {
 #odin-image {
     width: 50px;
     height: auto;
+}
+
+#image-credit {
+    margin-top: auto;
 }
 
 #plant {
