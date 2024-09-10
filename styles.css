@@ -3,7 +3,7 @@
     src: url("Norse-Bold.otf")
 }
 
-:root {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,8 +14,8 @@ body {
 }
 
 #left-section {
-    width: 30vw;
     height: 100vh;
+    width: calc(100vh * calc(1862/2792));
     position: relative;
     display: flex;
     flex-direction: column;
@@ -25,11 +25,22 @@ body {
 #logo-container {
     display:flex;
     justify-content: center;
+    align-items: center;
     margin-top: 200px;
     margin-bottom: auto;
     width: 100%;
     font-family: "Norse Bold";
     color: white;
+    background-color: hsla(0,0%,0%,50%);
+    padding: 6px 0;
+}
+
+#logo-container h1 {
+    font-size: 55px;
+}
+
+#logo-container > * {
+    opacity: 1;
 }
 
 #odin-image {
@@ -38,12 +49,16 @@ body {
 }
 
 #image-credit {
-    margin-top: auto;
+    color: white;
+    margin: auto auto 8px auto;
+}
+
+a {
+    color: inherit;
 }
 
 #plant {
-    width: 100%;
-    height: auto;
+    max-height: 100%;
     position: absolute;
     z-index: -1;
 }
