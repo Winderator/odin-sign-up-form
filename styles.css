@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url("Norse-Bold.otf")
+}
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+#left-section {
+    width: 40vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-container {
+    display:flex;
+    justify-content: center;
+    margin-top: 200px;
+    width: 100%;
+    font-family: "Norse Bold";
+    color: white;
+}
+
+#odin-image {
+    width: 50px;
+    height: auto;
+}
+
+#plant {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+#right-section {
+    width: 60vw;
+}
