@@ -104,6 +104,25 @@ form {
     gap: 30px;
 }
 
+label {
+    color: hsl(0,0%,10%);
+}
+
+input {
+    padding: 3px;
+    border: 2px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input[type="password"]:invalid:not(:focus) {
+    border: 1px solid red;
+}
+
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: 3px 3px 3px 0 hsla(0,0%,0%,20%);
+}
+
 .name, .contact, .password {
     display: flex;
     gap: 50px;
